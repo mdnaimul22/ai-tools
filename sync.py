@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import logging
 import shutil
@@ -507,8 +508,19 @@ def main() -> None:
     logger.info(f"  Log file     : {log_file}")
     logger.info("")
 
-    # Initial sync + schedule
+    # Parse arguments
+    parser = argparse.ArgumentParser(description="AI Tools Upstream Sync Daemon")
+    parser.add_argument("--once", action="store_true", help="Run the sync job exactly once and exit (useful for CI/CD).")
+    args = parser.parse_args()
+
+    # Initial sync
     sync_job(watcher, logger)
+
+    if args.once:
+        logger.info("⚡  Ran exactly once (--once flag). Exiting.")
+        return
+
+    # Schedule
     register_schedule(watcher, logger)
 
     # ── Main loop ──────────────────────────────────────────────────────────
