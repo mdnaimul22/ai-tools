@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# upstream.yaml — Human Skills Upstream Repository Tracker
+# upstream.yaml — AI Tools Upstream Repository Tracker
 #
 # Use {REPO_ROOT} as a portable placeholder for the root of this repo.
 # The sync script resolves it automatically — no hardcoded paths needed.

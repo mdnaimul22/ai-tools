@@ -1,17 +1,17 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# path_forward.yaml — Skill Copy Mapping Rules
+# path_forward.yaml — Asset Forward Mapping Rules
 #
 # Use {REPO_ROOT} as a portable placeholder for the root of this repo.
 # The sync script resolves it automatically — no hardcoded paths needed.
 #
 # Format:
-#   from    : Absolute source path (in upstream repo)
-#   to      : Absolute destination path (in YOUR repo's skills/ dir)
+#   from    : Source path (in upstream repo)
+#   to      : Destination path (file path = rename, dir path = keep name)
 #   enabled : Set to false to temporarily pause this forwarding rule
 #
 # Notes:
-#   - Destination folder will be OVERWRITTEN on every sync (clean copy)
-#   - Source must be a skill folder containing a SKILL.md file
+#   - Destination will be OVERWRITTEN on every sync (clean copy)
+#   - Source must exist in the upstream repo
 #   - You can add as many rules as needed below
 # ─────────────────────────────────────────────────────────────────────────────
 
