@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# upstream.yaml — Human Skills Upstream Repository Tracker
+#
+# Use {REPO_ROOT} as a portable placeholder for the root of this repo.
+# The sync script resolves it automatically — no hardcoded paths needed.
+#
+# Format:
+#   name  : A short label shown in logs
+#   path  : Absolute local path to the cloned upstream repo
+# ─────────────────────────────────────────────────────────────────────────────
+
+upstreams:
+
+  - name: .tools
+    path: "{REPO_ROOT}/.toolss"
+    url: "https://github.com/ghimiresunil/Top-AI-Tools.git"
+    pull: true

@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# automation.yaml — Sync Schedule, Git, and Logging Configuration
+#
+# Use {REPO_ROOT} as a portable placeholder for the root of this repo.
+# The sync script resolves it automatically — no hardcoded paths needed.
+# ─────────────────────────────────────────────────────────────────────────────
+
+schedule:
+  # Run once every day at this time (24-hour format HH:MM)
+  # Set run_at to null to use interval_hours instead
+  run_at: "06:00"
+
+  # Fallback: if run_at is null, run every N hours
+  interval_hours: 24
+
+  # How often (seconds) to poll config files for hot-reload changes
+  poll_interval_seconds: 30
+
+# ── Git Configuration ─────────────────────────────────────────────────────────
+git:
+  auto_push: true
+  branch: main
+
+  # Commit message template — [{datetime}] will be replaced with actual time
+  commit_message: "[{datetime}]"
+
+# ── Logging Configuration ─────────────────────────────────────────────────────
+logging:
+  level: INFO   # DEBUG | INFO | WARNING | ERROR
+  log_file: "{REPO_ROOT}/scripts/logs/sync.log"

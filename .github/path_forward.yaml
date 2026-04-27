@@ -1,0 +1,22 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# path_forward.yaml — Skill Copy Mapping Rules
+#
+# Use {REPO_ROOT} as a portable placeholder for the root of this repo.
+# The sync script resolves it automatically — no hardcoded paths needed.
+#
+# Format:
+#   from    : Absolute source path (in upstream repo)
+#   to      : Absolute destination path (in YOUR repo's skills/ dir)
+#   enabled : Set to false to temporarily pause this forwarding rule
+#
+# Notes:
+#   - Destination folder will be OVERWRITTEN on every sync (clean copy)
+#   - Source must be a skill folder containing a SKILL.md file
+#   - You can add as many rules as needed below
+# ─────────────────────────────────────────────────────────────────────────────
+
+forwards:
+
+  - from: "{REPO_ROOT}/.tools/README.md"
+    to:   "{REPO_ROOT}/ai-tools"
+    enabled: true
