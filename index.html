@@ -365,21 +365,41 @@
       const cells = line.split('|').map(c => c.trim()).filter(Boolean);
       if (cells.length < 2) return null;
 
-      const first = extractLink(cells[0]);
-      if (!first) return null;
-
-      const desc = cells[1] || '';
-      let url = first.url;
+      // Extract link from third column (the 🔗 link)
+      let linkUrl = '';
       if (cells[2]) {
         const lk = extractLink(cells[2]);
-        if (lk) url = lk.url;
+        if (lk) linkUrl = lk.url;
       }
-      return { name: first.text, description: desc, url };
+
+      // First cell: could be [Name](url) or just plain "Name"
+      const first = extractLink(cells[0]);
+      let name, url;
+      if (first) {
+        name = first.text;
+        url = linkUrl || first.url;
+      } else {
+        name = cells[0];
+        url = linkUrl;
+      }
+
+      if (!name || !url) return null;
+      const desc = cells[1] || '';
+      return { name, description: desc, url };
     }
 
     function parseListItem(line) {
       const m = line.match(/^-\s*\[([^\]]+)\]\(([^)]+)\)\s*[-–—]?\s*(.*)/);
       return m ? { name: m[1], description: m[3].trim(), url: m[2] } : null;
+    }
+
+    function isSkipRow(t) {
+      // Separator rows: |------|------|------|
+      if (/^\|[\s\-:|]+\|$/.test(t) || /^\|[\s\-:|]+$/.test(t)) return true;
+      // Header rows: | Tools | Used for | Link |
+      const lower = t.toLowerCase();
+      if (lower.includes('| tools') && (lower.includes('used for') || lower.includes('link'))) return true;
+      return false;
     }
 
     function parseMD(md) {
@@ -398,7 +418,7 @@
           continue;
         }
         if (!cur) continue;
-        if (!t || t.startsWith('| Tools') || t.startsWith('|--') || t.startsWith('| ---') || t.startsWith('| ------')) continue;
+        if (!t || isSkipRow(t)) continue;
 
         if (t.startsWith('|')) {
           const tool = parseRow(t);
