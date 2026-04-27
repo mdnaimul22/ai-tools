@@ -59,6 +59,24 @@
     .sidebar-brand {
       padding: 1.2rem 1.2rem 1rem;
       border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sidebar-close {
+      background: none;
+      border: none;
+      color: var(--text-3);
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: color var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sidebar-close:hover {
+      color: var(--accent);
     }
 
     .sidebar-brand h1 {
@@ -160,7 +178,7 @@
       color: #fff;
     }
 
-    .theme-btn {
+    .theme-btn, .expand-btn {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -171,9 +189,9 @@
       line-height: 1;
       transition: background var(--transition), border var(--transition);
       flex-shrink: 0;
+      font-family: inherit;
     }
-
-    .theme-btn:hover {
+    .theme-btn:hover, .expand-btn:hover {
       background: var(--bg-hover);
       border-color: var(--border-h);
     }
@@ -213,7 +231,7 @@
       white-space: nowrap;
     }
 
-    .mobile-toggle {
+    .menu-toggle {
       display: none;
       background: none;
       border: none;
@@ -221,6 +239,15 @@
       font-size: 1.3rem;
       cursor: pointer;
       padding: .3rem;
+    }
+
+    @media (min-width: 769px) {
+      .app.sidebar-closed .sidebar {
+        margin-left: calc(-1 * var(--sidebar-w));
+      }
+      .app.sidebar-closed .menu-toggle {
+        display: block;
+      }
     }
 
     .tools-container {
@@ -379,7 +406,7 @@
         display: block;
       }
 
-      .mobile-toggle {
+      .menu-toggle {
         display: block;
       }
 
@@ -399,18 +426,20 @@
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-brand">
         <h1>⚡ AI Tools</h1>
+        <button class="sidebar-close" id="sidebarCloseBtn" title="Close Sidebar">✕</button>
       </div>
       <nav class="sidebar-nav" id="navList"></nav>
     </aside>
     <div class="overlay" id="overlay"></div>
     <main class="content">
       <header class="content-header">
-        <button class="mobile-toggle" id="menuBtn">☰</button>
+        <button class="menu-toggle" id="menuBtn" title="Open Sidebar">☰</button>
         <h2 id="headerTitle">All Tools</h2>
         <span class="badge" id="headerBadge">0 tools</span>
         <div class="header-search">
           <input type="text" id="searchInput" placeholder="Search tools…">
         </div>
+        <button class="expand-btn" id="expandBtn" title="Toggle all descriptions">▼</button>
         <button class="theme-btn" id="themeBtn" title="Switch theme">🎨</button>
       </header>
       <div class="tools-container" id="toolsList">
@@ -505,8 +534,10 @@
     const searchInput = $('searchInput');
     const sidebar = $('sidebar');
     const themeBtn = $('themeBtn');
+    const expandBtn = $('expandBtn');
     const overlay = $('overlay');
     const menuBtn = $('menuBtn');
+    const sidebarCloseBtn = $('sidebarCloseBtn');
 
     // ── Parser ──────────────────────────────────────────────
     function extractLink(text) {
@@ -636,6 +667,9 @@
       headerTitle.textContent = activeCategory || 'All Tools';
       headerBadge.textContent = `${tools.length} tool${tools.length !== 1 ? 's' : ''}`;
 
+      isExpanded = false;
+      if (expandBtn) expandBtn.innerHTML = '▼';
+
       if (!tools.length) {
         toolsList.innerHTML = `<div class="state-msg"><span class="icon">🔎</span><p>No tools found</p></div>`;
         return;
@@ -658,16 +692,45 @@
       return d.innerHTML;
     }
 
-    // ── Mobile ──────────────────────────────────────────────
-    function closeMobile() { sidebar.classList.remove('open'); overlay.classList.remove('show'); }
-    menuBtn.addEventListener('click', () => { sidebar.classList.add('open'); overlay.classList.add('show'); });
-    overlay.addEventListener('click', closeMobile);
+    // ── Sidebar Toggle ──────────────────────────────────────────────
+    function closeSidebar() {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+      } else {
+        document.querySelector('.app').classList.add('sidebar-closed');
+      }
+    }
+
+    function openSidebar() {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.add('open');
+        overlay.classList.add('show');
+      } else {
+        document.querySelector('.app').classList.remove('sidebar-closed');
+      }
+    }
+
+    menuBtn.addEventListener('click', openSidebar);
+    sidebarCloseBtn.addEventListener('click', closeSidebar);
+    overlay.addEventListener('click', closeSidebar);
 
     // ── Search ──────────────────────────────────────────────
     let debounce;
     searchInput.addEventListener('input', () => {
       clearTimeout(debounce);
       debounce = setTimeout(renderTools, 200);
+    });
+
+    // ── Expand Toggle ───────────────────────────────────────
+    let isExpanded = false;
+    expandBtn.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      expandBtn.innerHTML = isExpanded ? '▲' : '▼';
+      document.querySelectorAll('.tool-item').forEach(el => {
+        if (isExpanded) el.classList.add('open');
+        else el.classList.remove('open');
+      });
     });
 
     // ── Theme Switcher ──────────────────────────────────────
