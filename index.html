@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Tools Directory — Curated AI-Powered Tools</title>
   <meta name="description" content="A curated directory of top AI-powered tools organized by category.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg-root: #0b0b10;
-      --bg-sidebar: #111118;
-      --bg-card: #16161f;
-      --bg-hover: #1e1e2d;
-      --bg-active: #252540;
-      --accent: #7c3aed;
-      --accent-light: #a78bfa;
-      --accent-glow: rgba(124,58,237,.12);
-      --text-1: #f1f5f9;
-      --text-2: #94a3b8;
-      --text-3: #64748b;
-      --border: rgba(255,255,255,.06);
-      --border-h: rgba(255,255,255,.1);
-      --radius: 10px;
-      --sidebar-w: 280px;
-      --transition: .25s cubic-bezier(.4,0,.2,1);
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    html { font-size: 15px; }
+    :root {
+      --radius: 0px;
+      --sidebar-w: 280px;
+      --transition: .25s ease;
+    }
+
+    html {
+      font-size: 15px;
+    }
+
     body {
-      font-family: 'Inter', system-ui, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       background: var(--bg-root);
       color: var(--text-1);
       min-height: 100vh;
@@ -40,7 +38,10 @@
     }
 
     /* ── Layout ─────────────────────────── */
-    .app { display: flex; height: 100vh; }
+    .app {
+      display: flex;
+      height: 100vh;
+    }
 
     /* ── Sidebar ────────────────────────── */
     .sidebar {
@@ -54,38 +55,46 @@
       transition: transform var(--transition);
       z-index: 100;
     }
-    .sidebar-brand {
-      padding: 1.4rem 1.2rem 1rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .sidebar-brand h1 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--accent-light), #c084fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: -.02em;
-    }
-    .sidebar-brand p { font-size: .72rem; color: var(--text-3); margin-top: .25rem; }
 
-    .sidebar-search {
-      padding: .75rem 1rem;
+    .sidebar-brand {
+      padding: 1.2rem 1.2rem 1rem;
       border-bottom: 1px solid var(--border);
     }
-    .sidebar-search input {
+
+    .sidebar-brand h1 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--accent);
+      text-shadow: 0 0 8px var(--accent-glow);
+      letter-spacing: 2px;
+    }
+
+    .header-search {
+      flex: 1;
+      max-width: 240px;
+      margin-left: auto;
+    }
+
+    .header-search input {
       width: 100%;
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: .55rem .75rem;
+      border-radius: var(--radius);
+      padding: .55rem .85rem;
       color: var(--text-1);
       font-size: .82rem;
       font-family: inherit;
       outline: none;
       transition: border var(--transition);
     }
-    .sidebar-search input:focus { border-color: var(--accent); }
-    .sidebar-search input::placeholder { color: var(--text-3); }
+
+    .header-search input:focus {
+      border-color: var(--accent);
+    }
+
+    .header-search input::placeholder {
+      color: var(--text-3);
+    }
 
     .sidebar-nav {
       flex: 1;
@@ -94,6 +103,7 @@
       scrollbar-width: thin;
       scrollbar-color: var(--bg-hover) transparent;
     }
+
     .nav-item {
       display: flex;
       align-items: center;
@@ -106,35 +116,67 @@
       color: var(--text-2);
       user-select: none;
     }
-    .nav-item:hover { background: var(--bg-hover); color: var(--text-1); }
+
+    .nav-item:hover {
+      background: var(--bg-hover);
+      color: var(--text-1);
+    }
+
     .nav-item.active {
       background: var(--accent-glow);
       border-left-color: var(--accent);
       color: var(--text-1);
       font-weight: 500;
     }
-    .nav-icon { font-size: 1rem; flex-shrink: 0; width: 1.4rem; text-align: center; }
-    .nav-label { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .nav-icon {
+      font-size: 1rem;
+      flex-shrink: 0;
+      width: 1.4rem;
+      text-align: center;
+    }
+
+    .nav-label {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     .nav-count {
-      font-size: .68rem;
+      font-size: .75rem;
       background: var(--bg-hover);
-      color: var(--text-3);
+      color: var(--accent);
+      border: 1px solid var(--border);
       padding: .15rem .45rem;
-      border-radius: 50px;
-      font-weight: 500;
+      border-radius: var(--radius);
+      font-weight: bold;
       min-width: 1.6rem;
       text-align: center;
     }
-    .nav-item.active .nav-count { background: var(--accent); color: #fff; }
 
-    .sidebar-footer {
-      padding: .75rem 1rem;
-      border-top: 1px solid var(--border);
-      font-size: .68rem;
-      color: var(--text-3);
-      text-align: center;
+    .nav-item.active .nav-count {
+      background: var(--accent);
+      color: #fff;
     }
-    .sidebar-footer a { color: var(--accent-light); text-decoration: none; }
+
+    .theme-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text-2);
+      cursor: pointer;
+      padding: .45rem .65rem;
+      font-size: .88rem;
+      line-height: 1;
+      transition: background var(--transition), border var(--transition);
+      flex-shrink: 0;
+    }
+
+    .theme-btn:hover {
+      background: var(--bg-hover);
+      border-color: var(--border-h);
+    }
 
     /* ── Main Content ───────────────────── */
     .content {
@@ -143,23 +185,34 @@
       flex-direction: column;
       overflow: hidden;
     }
+
     .content-header {
-      padding: 1.5rem 2rem 1rem;
+      padding: 1rem 1.5rem;
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: .8rem;
       flex-shrink: 0;
     }
-    .content-header h2 { font-size: 1.3rem; font-weight: 700; }
-    .content-header .badge {
-      font-size: .72rem;
-      background: var(--accent-glow);
-      color: var(--accent-light);
-      padding: .25rem .65rem;
-      border-radius: 50px;
-      font-weight: 500;
+
+    .content-header h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      white-space: nowrap;
+      letter-spacing: 1px;
     }
+
+    .content-header .badge {
+      font-size: .75rem;
+      background: var(--bg-hover);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      padding: .2rem .55rem;
+      border-radius: var(--radius);
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
     .mobile-toggle {
       display: none;
       background: none;
@@ -187,62 +240,83 @@
       transition: border var(--transition), background var(--transition);
       overflow: hidden;
     }
-    .tool-item:hover { border-color: var(--border-h); background: var(--bg-hover); }
+
+    .tool-item:hover {
+      border-color: var(--border-h);
+      background: var(--bg-hover);
+    }
 
     .tool-row {
       display: flex;
       align-items: center;
-      padding: .7rem 1rem;
+      padding: .4rem 0.8rem;
       cursor: pointer;
-      gap: .75rem;
+      gap: 1rem;
     }
+
     .tool-name {
       flex: 1;
-      font-size: .88rem;
-      font-weight: 500;
+      font-size: 1.05rem;
+      font-weight: 600;
       color: var(--text-1);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      letter-spacing: -0.01em;
     }
+
     .tool-chevron {
       color: var(--text-3);
-      font-size: .7rem;
+      font-size: .85rem;
       transition: transform var(--transition);
       flex-shrink: 0;
     }
-    .tool-item.open .tool-chevron { transform: rotate(90deg); }
+
+    .tool-item.open .tool-chevron {
+      transform: rotate(90deg);
+    }
 
     .tool-goto {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 6px;
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius);
       background: var(--accent-glow);
       color: var(--accent-light);
       text-decoration: none;
       flex-shrink: 0;
       transition: background var(--transition);
     }
-    .tool-goto:hover { background: var(--accent); color: #fff; }
-    .tool-goto svg { width: 14px; height: 14px; }
+
+    .tool-goto:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .tool-goto svg {
+      width: 16px;
+      height: 16px;
+    }
 
     .tool-desc {
       max-height: 0;
       overflow: hidden;
       transition: max-height .3s ease, padding .3s ease;
-      padding: 0 1rem;
+      padding: 0 1.2rem;
     }
+
     .tool-item.open .tool-desc {
       max-height: 120px;
-      padding: 0 1rem .7rem;
+      padding: 0 1.2rem 1rem;
     }
+
     .tool-desc p {
-      font-size: .78rem;
+      font-size: .9rem;
       color: var(--text-2);
       line-height: 1.5;
+      margin-top: -0.2rem;
     }
 
     /* ── Loading / Empty ─────────────────── */
@@ -256,53 +330,77 @@
       color: var(--text-3);
       text-align: center;
     }
-    .state-msg .icon { font-size: 2.5rem; }
-    .state-msg p { font-size: .85rem; }
-    .spinner {
-      width: 32px; height: 32px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin .8s linear infinite;
+
+    .state-msg .icon {
+      font-size: 2.5rem;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .state-msg p {
+      font-size: .85rem;
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px dashed var(--accent);
+      border-radius: 0;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     /* ── Mobile ──────────────────────────── */
     .overlay {
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,.5);
+      background: rgba(0, 0, 0, .5);
       z-index: 90;
     }
+
     @media (max-width: 768px) {
       .sidebar {
         position: fixed;
-        left: 0; top: 0; bottom: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
         transform: translateX(-100%);
       }
-      .sidebar.open { transform: translateX(0); }
-      .overlay.show { display: block; }
-      .mobile-toggle { display: block; }
-      .content-header { padding: 1rem 1.2rem .8rem; }
-      .tools-container { padding: .75rem 1rem 1.5rem; }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .overlay.show {
+        display: block;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .content-header {
+        padding: 1rem 1.2rem .8rem;
+      }
+
+      .tools-container {
+        padding: .75rem 1rem 1.5rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="app">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-brand">
         <h1>⚡ AI Tools</h1>
-        <p>Curated AI-Powered Directory</p>
-      </div>
-      <div class="sidebar-search">
-        <input type="text" id="searchInput" placeholder="Search tools…">
       </div>
       <nav class="sidebar-nav" id="navList"></nav>
-      <div class="sidebar-footer">
-        Data from <a href="https://github.com/ghimiresunil/Top-AI-Tools" target="_blank">Top-AI-Tools</a>
-      </div>
     </aside>
     <div class="overlay" id="overlay"></div>
     <main class="content">
@@ -310,6 +408,10 @@
         <button class="mobile-toggle" id="menuBtn">☰</button>
         <h2 id="headerTitle">All Tools</h2>
         <span class="badge" id="headerBadge">0 tools</span>
+        <div class="header-search">
+          <input type="text" id="searchInput" placeholder="Search tools…">
+        </div>
+        <button class="theme-btn" id="themeBtn" title="Switch theme">🎨</button>
       </header>
       <div class="tools-container" id="toolsList">
         <div class="state-msg" id="loadingState">
@@ -321,6 +423,56 @@
   </div>
 
   <script>
+    // ── Themes ──────────────────────────────────────────────
+    const THEMES = [
+      {
+        name: 'Matrix',
+        icon: '💻',
+        vars: {
+          '--bg-root': '#050d0a', '--bg-sidebar': '#071510', '--bg-card': '#050d0a',
+          '--bg-hover': '#0a1c15', '--bg-active': 'rgba(0,255,136,.1)',
+          '--accent': '#00ff88', '--accent-light': '#4ecdc4',
+          '--accent-glow': 'rgba(0,255,136,.15)',
+          '--text-1': '#00ff88', '--text-2': '#7fffd4', '--text-3': '#4ecdc4',
+          '--border': 'rgba(0,255,136,.25)', '--border-h': '#00ff88'
+        }
+      },
+      {
+        name: 'Midnight',
+        icon: '🌙',
+        vars: {
+          '--bg-root': '#0b0b10', '--bg-sidebar': '#111118', '--bg-card': '#16161f',
+          '--bg-hover': '#1e1e2d', '--bg-active': '#252540',
+          '--accent': '#7c3aed', '--accent-light': '#a78bfa',
+          '--accent-glow': 'rgba(124,58,237,.12)',
+          '--text-1': '#f1f5f9', '--text-2': '#94a3b8', '--text-3': '#64748b',
+          '--border': 'rgba(255,255,255,.06)', '--border-h': 'rgba(255,255,255,.1)'
+        }
+      },
+      {
+        name: 'Ocean',
+        icon: '🌊',
+        vars: {
+          '--bg-root': '#0a1628', '--bg-sidebar': '#0f1d32', '--bg-card': '#142640',
+          '--bg-hover': '#1a3050', '--bg-active': '#203a5c',
+          '--accent': '#0ea5e9', '--accent-light': '#38bdf8',
+          '--accent-glow': 'rgba(14,165,233,.12)',
+          '--text-1': '#e0f2fe', '--text-2': '#7dd3fc', '--text-3': '#0c4a6e',
+          '--border': 'rgba(56,189,248,.08)', '--border-h': 'rgba(56,189,248,.15)'
+        }
+      }
+    ];
+    let currentTheme = 0;
+
+    function applyTheme(index) {
+      const theme = THEMES[index];
+      const root = document.documentElement;
+      for (const [k, v] of Object.entries(theme.vars)) root.style.setProperty(k, v);
+      $('themeBtn').textContent = theme.icon;
+      $('themeBtn').title = `Theme: ${theme.name}`;
+      localStorage.setItem('ai-tools-theme', index);
+    }
+
     // ── Config ──────────────────────────────────────────────
     const DATA_URLS = [
       './.github/tools.md',
@@ -346,14 +498,15 @@
 
     // ── DOM ──────────────────────────────────────────────────
     const $ = id => document.getElementById(id);
-    const navList     = $('navList');
-    const toolsList   = $('toolsList');
+    const navList = $('navList');
+    const toolsList = $('toolsList');
     const headerTitle = $('headerTitle');
     const headerBadge = $('headerBadge');
     const searchInput = $('searchInput');
-    const sidebar     = $('sidebar');
-    const overlay     = $('overlay');
-    const menuBtn     = $('menuBtn');
+    const sidebar = $('sidebar');
+    const themeBtn = $('themeBtn');
+    const overlay = $('overlay');
+    const menuBtn = $('menuBtn');
 
     // ── Parser ──────────────────────────────────────────────
     function extractLink(text) {
@@ -434,9 +587,7 @@
     // ── Render ───────────────────────────────────────────────
     function renderNav() {
       const total = categories.reduce((s, c) => s + c.tools.length, 0);
-      let html = `<div class="nav-item${activeCategory === null ? ' active' : ''}" data-cat="__all__">
-        <span class="nav-icon">🏠</span><span class="nav-label">All Tools</span>
-        <span class="nav-count">${total}</span></div>`;
+      let html = '';
 
       for (const cat of categories) {
         const isActive = activeCategory === cat.name;
@@ -445,6 +596,11 @@
           <span class="nav-label">${cat.name}</span>
           <span class="nav-count">${cat.tools.length}</span></div>`;
       }
+
+      html += `<div class="nav-item${activeCategory === null ? ' active' : ''}" data-cat="__all__">
+        <span class="nav-icon">🏠</span><span class="nav-label">All Tools</span>
+        <span class="nav-count">${total}</span></div>`;
+
       navList.innerHTML = html;
 
       navList.querySelectorAll('.nav-item').forEach(el => {
@@ -514,18 +670,29 @@
       debounce = setTimeout(renderTools, 200);
     });
 
+    // ── Theme Switcher ──────────────────────────────────────
+    themeBtn.addEventListener('click', () => {
+      currentTheme = (currentTheme + 1) % THEMES.length;
+      applyTheme(currentTheme);
+    });
+
     // ── Init ────────────────────────────────────────────────
     async function fetchMD() {
       for (const url of DATA_URLS) {
         try {
           const res = await fetch(url);
           if (res.ok) return await res.text();
-        } catch (_) {}
+        } catch (_) { }
       }
       return null;
     }
 
     (async () => {
+      // Apply saved or default theme
+      const saved = parseInt(localStorage.getItem('ai-tools-theme') || '0', 10);
+      currentTheme = saved < THEMES.length ? saved : 0;
+      applyTheme(currentTheme);
+
       const md = await fetchMD();
       if (!md) {
         toolsList.innerHTML = `<div class="state-msg"><span class="icon">⚠️</span><p>Failed to load tools data.</p></div>`;
@@ -537,4 +704,5 @@
     })();
   </script>
 </body>
+
 </html>
