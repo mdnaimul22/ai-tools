@@ -248,6 +248,22 @@
     }
 
     .content-header h2 {
+      flex: 1;
+      font-size: 1.25rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .content-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .85rem;
+      color: var(--text-3);
+      background: var(--bg-sidebar);
+      flex-shrink: 0;
+    }
       font-size: 1.2rem;
       font-weight: bold;
       white-space: nowrap;
@@ -482,6 +498,9 @@
           <p>Loading tools directory…</p>
         </div>
       </div>
+      <footer class="content-footer">
+        <p>&copy; 2024 AI Tools Directory. Curated with ⚡ for the AI community.</p>
+      </footer>
     </main>
   </div>
 
@@ -671,13 +690,20 @@
       navList.querySelectorAll('.nav-item').forEach(el => {
         el.addEventListener('click', () => {
           const cat = el.dataset.cat;
-          activeCategory = cat === '__all__' ? null : cat;
-          renderNav();
-          renderTools();
-          closeMobile();
+          const target = cat === '__all__' ? '' : cat;
+          window.location.hash = target;
+          // Hash change listener will handle the rest
         });
       });
     }
+
+    // Listen for hash changes to support deep-linking and browser back/forward
+    window.addEventListener('hashchange', () => {
+      const hash = decodeURIComponent(window.location.hash.substring(1));
+      activeCategory = hash || null;
+      renderNav();
+      renderTools();
+    });
 
     function getVisibleTools() {
       const query = searchInput.value.toLowerCase().trim();
@@ -789,6 +815,10 @@
       const saved = parseInt(localStorage.getItem('ai-tools-theme') || '0', 10);
       currentTheme = saved < THEMES.length ? saved : 0;
       applyTheme(currentTheme);
+
+      // Handle initial deep-link from hash
+      const hash = decodeURIComponent(window.location.hash.substring(1));
+      activeCategory = hash || null;
 
       const md = await fetchMD();
       if (!md) {
