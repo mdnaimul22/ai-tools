@@ -2,7 +2,7 @@
   <h1 align="center">
     ⚡ AI Tools
     <a href="https://mdnaimul22.github.io/ai-tools/">
-      <img src="https://img.shields.io/badge/Live-Dashboard-00ff88?style=for-the-badge&logo=github&logoColor=black&labelColor=black" alt="Live Dashboard" style="vertical-align: middle;">
+      <img src="assets/live_badge.svg" alt="Live Dashboard" style="vertical-align: middle;">
     </a>
   </h1>
 </p>
