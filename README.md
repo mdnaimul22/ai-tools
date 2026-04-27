@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  ইন্টারনেটে প্রতিদিন অনেক নতুন এআই (AI) টুল আসে। আমরা জানতে পারি না কখন কোন টুলটি আসলো এবং কোন টুলটি ভালো। আপনি শুধুমাত্র এই পেজটি ফলো করে সর্বদা লেটেস্ট এআই ইনোভেশন এবং প্রয়োজনীয় টুল সম্পর্কে আপ-টু-ডেট থাকতে পারবেন। 
+  New AI tools emerge on the internet every day, making it difficult to keep track of what's new and which ones are actually good. By following this page, you can stay up-to-date with the latest AI innovations and essential tools at all times.
 </p>
 
 <p align="center">
