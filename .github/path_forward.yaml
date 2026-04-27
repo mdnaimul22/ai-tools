@@ -18,5 +18,5 @@
 forwards:
 
   - from: "{REPO_ROOT}/.tools/README.md"
-    to:   "{REPO_ROOT}/.github/tools.md"
+    to:   "{REPO_ROOT}/tools.md"
     enabled: true
