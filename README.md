@@ -1,15 +1,14 @@
 <p align="center">
-  <h1 align="center">⚡ AI Tools</h1>
+  <h1 align="center">
+    ⚡ AI Tools
+    <a href="https://mdnaimul22.github.io/ai-tools/">
+      <img src="https://img.shields.io/badge/Live-Dashboard-00ff88?style=for-the-badge&logo=github&logoColor=black&labelColor=black" alt="Live Dashboard" style="vertical-align: middle;">
+    </a>
+  </h1>
 </p>
 
 <p align="center">
   New AI tools emerge on the internet every day, making it difficult to keep track of what's new and which ones are actually good. By following this page, you can stay up-to-date with the latest AI innovations and essential tools at all times.
-</p>
-
-<p align="center">
-  <a href="https://mdnaimul22.github.io/ai-tools/">
-    <img src="https://img.shields.io/badge/Live-Dashboard-00ff88?style=for-the-badge&logo=github&logoColor=black&labelColor=black" alt="Live Dashboard">
-  </a>
 </p>
 
 ---
