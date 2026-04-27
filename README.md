@@ -1,16 +1,21 @@
-# ⚡ AI Tools Directory
+<p align="center">
+  <h1 align="center">⚡ AI Tools</h1>
+</p>
 
-![Dashboard Preview](assets/dashboard_preview.png)
+<p align="center">
+  ইন্টারনেটে প্রতিদিন অনেক নতুন এআই (AI) টুল আসে। আমরা জানতে পারি না কখন কোন টুলটি আসলো এবং কোন টুলটি ভালো। আপনি শুধুমাত্র এই পেজটি ফলো করে সর্বদা লেটেস্ট এআই ইনোভেশন এবং প্রয়োজনীয় টুল সম্পর্কে আপ-টু-ডেট থাকতে পারবেন। 
+</p>
 
-A lightweight, high-performance, single-page directory for curated AI-powered tools, designed with a sleek Cyberpunk/Matrix-inspired interface.
-
-This dashboard is automatically generated and hosted via **GitHub Pages**. It serves as a unified interface to browse hundreds of tools instantly.
-
-## 🔄 Automated Upstream Sync
-
-This repository does not accept direct additions or pull requests for new tools. 
-
-Instead, it relies on a GitHub Actions workflow that executes `sync.py`. This script automatically pulls the latest markdown database from the upstream `Top-AI-Tools` repository and synchronizes the local `.github/tools.md` file, keeping this directory continuously up to date.
+<p align="center">
+  <a href="https://mdnaimul22.github.io/ai-tools/">
+    <img src="https://img.shields.io/badge/Live-Dashboard-00ff88?style=for-the-badge&logo=github&logoColor=black&labelColor=black" alt="Live Dashboard">
+  </a>
+</p>
 
 ---
-*Developed with a zero-dependency vanilla HTML/CSS/JS architecture.*
+
+<p align="center">
+  <a href="https://mdnaimul22.github.io/ai-tools/">
+    <img src="assets/dashboard_preview.png" alt="Dashboard Preview" width="100%">
+  </a>
+</p>
