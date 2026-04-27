@@ -12,6 +12,6 @@
 upstreams:
 
   - name: .tools
-    path: "{REPO_ROOT}/.toolss"
+    path: "{REPO_ROOT}/.tools"
     url: "https://github.com/ghimiresunil/Top-AI-Tools.git"
     pull: true

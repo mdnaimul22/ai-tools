@@ -14,13 +14,13 @@ import yaml
 # ── Paths ──────────────────────────────────────────────────────────────────────
 SCRIPT_DIR          = Path(__file__).parent.resolve()
 HELPERS_DIR         = SCRIPT_DIR / ".github"
-REPO_ROOT           = SCRIPT_DIR.parent
+REPO_ROOT           = SCRIPT_DIR
 LOGS_DIR            = SCRIPT_DIR / "logs"
 
 UPSTREAM_CONFIG     = HELPERS_DIR / "upstream.yaml"
 PATH_FORWARD_CONFIG = HELPERS_DIR / "path_forward.yaml"
 AUTOMATION_CONFIG   = HELPERS_DIR / "automation.yaml"
-managed_FILE = HELPERS_DIR / "managed.json"
+REGISTRY_FILE      = HELPERS_DIR / "managed.json"
 
 CONFIG_FILES = [UPSTREAM_CONFIG, PATH_FORWARD_CONFIG, AUTOMATION_CONFIG]
 
@@ -135,7 +135,7 @@ class ConfigWatcher:
 
 def setup_logging(level: str, log_file: Path) -> logging.Logger:
     log_file.parent.mkdir(parents=True, exist_ok=True)
-    logger = logging.getLogger("human-skills")
+    logger = logging.getLogger("ai-tools")
     logger.setLevel(getattr(logging, level.upper(), logging.INFO))
     fmt = logging.Formatter(
         "%(asctime)s  %(levelname)-8s  %(message)s",
@@ -223,24 +223,24 @@ def pull_upstreams(upstreams: list[dict], logger: logging.Logger) -> tuple[dict[
 
 
 def load_registry() -> set[str]:
-    """Loads the set of managed skill paths from JSON."""
-    if not managed_FILE.exists():
+    """Loads the set of managed asset paths from JSON."""
+    if not REGISTRY_FILE.exists():
         return set()
     try:
-        with open(managed_FILE, "r") as f:
+        with open(REGISTRY_FILE, "r") as f:
             return set(json.load(f))
     except Exception:
         return set()
 
 
 def save_registry(paths: set[str]) -> None:
-    """Saves the set of managed skill paths to JSON."""
-    managed_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(managed_FILE, "w") as f:
+    """Saves the set of managed asset paths to JSON."""
+    REGISTRY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(REGISTRY_FILE, "w") as f:
         json.dump(sorted(list(paths)), f, indent=4)
 
 
-def forward_skills(forwards: list[dict], logger: logging.Logger) -> tuple[list[str], set[str]]:
+def forward_assets(forwards: list[dict], logger: logging.Logger) -> tuple[list[str], set[str]]:
     copied: list[str] = []
     cleared_dsts: set[str] = set()
     touched_dsts: set[str] = set()
@@ -270,6 +270,8 @@ def forward_skills(forwards: list[dict], logger: logging.Logger) -> tuple[list[s
         logger.info(f"  →  Forwarding [{name}] …")
         try:
             if src.is_file():
+                # Logic: If dst is an existing directory OR ends with a slash, treat as directory.
+                # Otherwise, treat as a file (supports renaming).
                 if dst.is_dir() or dst_path_str.endswith("/") or dst_path_str.endswith("\\"):
                     dst.mkdir(parents=True, exist_ok=True)
                     actual_dst = dst / name
@@ -336,15 +338,15 @@ def sync_job(watcher: ConfigWatcher, logger: logging.Logger) -> None:
     pulls, updated_upstreams = pull_upstreams(cfg["upstream"].get("upstreams", []), logger)
 
     # Step 2
-    logger.info("📁 STEP 2 — Forwarding skill paths")
+    logger.info("📁 STEP 2 — Forwarding assets")
     # Load what we managed previously
     previous_managed = load_registry()
     
     # Run forward and get current managed paths
-    copied, current_managed = forward_skills(cfg["path_forward"].get("forwards", []), logger)
+    copied, current_managed = forward_assets(cfg["path_forward"].get("forwards", []), logger)
 
     # Step 2.5 — Orphan Cleanup
-    logger.info("🧹 STEP 2.5 — Cleaning up orphaned upstream skills")
+    logger.info("🧹 STEP 2.5 — Cleaning up orphaned assets")
     removed = []
     
     # Orphans = (Paths we managed before) - (Paths we touched now)
@@ -357,7 +359,7 @@ def sync_job(watcher: ConfigWatcher, logger: logging.Logger) -> None:
             orphan_path = REPO_ROOT / orphan_path
             
         if orphan_path.exists():
-            logger.warning(f"  🗑️  Removing orphaned upstream skill: {orphan_path.name}")
+            logger.warning(f"  🗑️  Removing orphaned asset: {orphan_path.name}")
             try:
                 if orphan_path.is_dir():
                     shutil.rmtree(orphan_path)
@@ -447,7 +449,7 @@ def sync_job(watcher: ConfigWatcher, logger: logging.Logger) -> None:
     logger.info(
         f"{icon} SYNC COMPLETE  |  "
         f"Upstreams: {ok_cnt}/{len(pulls)}  |  "
-        f"Skills: +{len(copied)} / -{len(removed)}  |  "
+        f"Assets: +{len(copied)} / -{len(removed)}  |  "
         f"Push: {'OK' if push_ok else 'FAILED'}"
     )
     if copied:
@@ -480,7 +482,7 @@ def register_schedule(watcher: ConfigWatcher, logger: logging.Logger) -> None:
 
 def main() -> None:
     # Bootstrap: minimal console logger just for config loading errors
-    boot_logger = logging.getLogger("human-skills-boot")
+    boot_logger = logging.getLogger("ai-tools-boot")
     boot_logger.setLevel(logging.INFO)
     boot_logger.propagate = False
     _bh = logging.StreamHandler(sys.stdout)
