@@ -36,4 +36,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Run Sync
-        run: python3 sync.py --once
+        run: python3 sync.py --once --no-log

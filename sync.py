@@ -134,18 +134,26 @@ class ConfigWatcher:
 # Logging
 # ══════════════════════════════════════════════════════════════════════════════
 
-def setup_logging(level: str, log_file: Path) -> logging.Logger:
-    log_file.parent.mkdir(parents=True, exist_ok=True)
+def setup_logging(level: str, log_file: Path | None) -> logging.Logger:
     logger = logging.getLogger("ai-tools")
     logger.setLevel(getattr(logging, level.upper(), logging.INFO))
     fmt = logging.Formatter(
         "%(asctime)s  %(levelname)-8s  %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
-    for handler in [logging.StreamHandler(sys.stdout),
-                    logging.FileHandler(log_file, encoding="utf-8")]:
-        handler.setFormatter(fmt)
-        logger.addHandler(handler)
+    
+    # Always log to console
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(fmt)
+    logger.addHandler(console_handler)
+    
+    # Optionally log to file
+    if log_file:
+        log_file.parent.mkdir(parents=True, exist_ok=True)
+        file_handler = logging.FileHandler(log_file, encoding="utf-8")
+        file_handler.setFormatter(fmt)
+        logger.addHandler(file_handler)
+        
     return logger
 
 
@@ -482,7 +490,13 @@ def register_schedule(watcher: ConfigWatcher, logger: logging.Logger) -> None:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main() -> None:
-    # Bootstrap: minimal console logger just for config loading errors
+    # ── Parse arguments ───────────────────────────────────────────────────
+    parser = argparse.ArgumentParser(description="AI Tools Upstream Sync Daemon")
+    parser.add_argument("--once", action="store_true", help="Run the sync job exactly once and exit (useful for CI/CD).")
+    parser.add_argument("--no-log", action="store_true", help="Disable file logging (console only).")
+    args = parser.parse_args()
+
+    # ── Bootstrap ─────────────────────────────────────────────────────────
     boot_logger = logging.getLogger("ai-tools-boot")
     boot_logger.setLevel(logging.INFO)
     boot_logger.propagate = False
@@ -493,10 +507,15 @@ def main() -> None:
 
     watcher = ConfigWatcher(boot_logger)
 
-    # Proper logger with console + file output
+    # ── Proper logger setup ───────────────────────────────────────────────
     log_cfg  = watcher.config["automation"].get("logging", {})
-    log_file = Path(log_cfg.get("log_file", str(LOGS_DIR / "sync.log")))
-    logger   = setup_logging(log_cfg.get("level", "INFO"), log_file)
+    
+    # Only set log_file if --no-log is NOT present
+    log_file = None
+    if not args.no_log:
+        log_file = Path(log_cfg.get("log_file", str(LOGS_DIR / "sync.log")))
+
+    logger = setup_logging(log_cfg.get("level", "INFO"), log_file)
 
     logger.info("╔══════════════════════════════════════════════════════════════╗")
     logger.info("║     AI Tools — Upstream Sync Daemon  (Hot-Reload)       ║")
@@ -505,13 +524,11 @@ def main() -> None:
     logger.info(f"  Upstreams    : {len(watcher.config['upstream'].get('upstreams', []))}")
     logger.info(f"  Forwards     : {len(watcher.config['path_forward'].get('forwards', []))}")
     logger.info(f"  Config watch : every {watcher.poll_interval}s")
-    logger.info(f"  Log file     : {log_file}")
+    if log_file:
+        logger.info(f"  Log file     : {log_file}")
+    else:
+        logger.info("  Log file     : DISABLED (Console only)")
     logger.info("")
-
-    # Parse arguments
-    parser = argparse.ArgumentParser(description="AI Tools Upstream Sync Daemon")
-    parser.add_argument("--once", action="store_true", help="Run the sync job exactly once and exit (useful for CI/CD).")
-    args = parser.parse_args()
 
     # Initial sync
     sync_job(watcher, logger)
