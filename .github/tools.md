@@ -18,10 +18,10 @@ Curated list of top AI Tools.
 
 ## Art & Creativity
 
-| [NanoBanana2](https://nanobanana2.com) | Free AI image generator with trend-aware templates, multiple AI models, and advanced editing tools | Free + Premium |
-| [igly.ai](https://igly.ai) | Free AI image editor with 12+ tools for e-commerce — background removal, generation, inpainting, upscaling | Free |
 | Tools | Used for | Link |
 |------ | ------------ | :----------: |
+| [NanoBanana2](https://nanobanana2.com) | Free AI image generator with trend-aware templates, multiple AI models, and advanced editing tools | Free + Premium |
+| [igly.ai](https://igly.ai) | Free AI image editor with 12+ tools for e-commerce — background removal, generation, inpainting, upscaling | Free |
 |AI Baby Dance|Turn photos into dancing videos|[🔗](https://aibabydance.com)|
 |Saveto AI|100% Free all-in-one AI Transcription & Summarization online |[🔗](https://saveto.ai/)|
 | Face Swap Video AI | Free Online AI Face Swap for Video & Photo. | [🔗](https://faceswapvideo.io/)|
@@ -259,6 +259,7 @@ Curated list of top AI Tools.
 | Dystr | AI powered analysis / cloud runtime | [🔗](https://dystr.com)|
 | GitPoet | Git commit message generator (based on your changes) with a VSCode extension | [🔗](https://www.gitpoet.dev/)|
 |AskCommand|Generate Unix commands from text automatically|[🔗](https://www.askcommand.cppexpert.online/)|
+| Shire | Open-source persistent workspaces for AI agent teams with inter-agent mailboxes, shared drive, and context preservation. Supports Claude Code, OpenCode, Pi Agent and more. | [🔗](https://github.com/victor36max/shire)|
 | Shotstack Workflows | No-code, automation workflow tool for building Generative AI media applications |[🔗](https://shotstack.io/product/workflows/)|
 | text-generator.io AI Text Generator | Open Source Vision language models and web crawlers to understand any links in prompts given. API for developers and special support for AI autocomplete. | [🔗](https://text-generator.io) |
 | Code to Flow | Visualize, Analyze, and Understand Your Code flow. Turn Code into Interactive Flowcharts with AI. Simplify Complex Logic Instantly. | [🔗](https://codetoflow.com) |
