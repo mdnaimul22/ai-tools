@@ -182,6 +182,7 @@ Curated list of top AI Tools.
 | Zolltarifnummer.com | Find and verify the right 11-digit German customs tariff number | [🔗](https://www.zolltarifnummer.com/)|
 | Shopme Agent | A next-gen shopping assistant that helps you find, compare, and buy products across Chinese and global platforms, including factory-direct sources, all in one place. | [🔗](https://shopmeagent.com/)|
 | Picoko | Create studio-quality product images in seconds,Instantly generate model shots, lifestyle scenes & more  | [🔗](https://www.picoko.com/) |
+| ECFotos | AI photo editor for e-commerce product images, listing visuals, background removal, upscaling, collage making, and image editing workflows | [🔗](https://ecfotos.com/) |
 
 ## Finance
 
@@ -511,6 +512,7 @@ Curated list of top AI Tools.
 | Humanizer AI | Make AI-generated text undetectable and human-sounding | [🔗](https://humanizerai.com)|
 | Ration | AI-Powered Pantry & Meal Planning Platforms | [🔗](https://ration.mayutic.com/) |
 | Consul | Executive Assistant That Runs Your Calendar, Inbox & Scheduling | [🔗](https://consul.so/) |
+| Burn 451 | AI-native read-later with 24h burn timer; saved articles become a permanent knowledge vault your AI agents can query via MCP | [🔗](https://burn451.cloud/?ref=top-ai-tools) |
 | Podtastic | Podtastic is a podcast player powered by Pod-telligence | [🔗](https://podtastic.app/) |
 | Video to Text | Turn any video or audio into clean text in minutes | [🔗](https://video2text.net/) |
 
