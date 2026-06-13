@@ -6,6 +6,7 @@ A comprehensive, community-curated directory that aims to catalog and showcase t
 
 ## Contributing
 
+- [WebCoreLab AI Audit](https://webcorelab.com) — 272-check AI-powered SEO audit + GEO/AEO (AI search visibility). Tracks brand citations in ChatGPT, Claude, Perplexity, Gemini.
 * Please **Open** a [**PR**](https://github.com/ghimiresunil/Top-AI-Tools/pulls) for list of top AI tools to be added.
 * Use the format below.
 
@@ -92,7 +93,6 @@ Curated list of top AI Tools.
 | Woopicx | AI-powered image search engine with 100,000+ free icons, illustrations, and 3D assets | [🔗](https://woopicx.com/) |
 | PixPark AI | Generate and edit images with AI—no login, free and unlimited. | [🔗](https://pixpark.ai)
 | CDance AI | AI-powered dance video generation tool with multiple styles and motion capture. | [🔗](https://cdance.net)
-
 | Melies | AI filmmaking CLI and API for generating videos, posters, and storyboards from your terminal | [🔗](https://melies.co/agent)
 | PolyGlyph | AI-powered SVG generation and editing tool. Generate vector graphics from text prompts and edit in a browser-based vector editor. | [🔗](https://polyglyph.io/)
 | Image to 3D | Convert Text & Images to High-Quality 3D Models in Seconds. | [🔗](https://image-to-3d.ai/) |
