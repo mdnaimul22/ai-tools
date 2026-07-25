@@ -108,6 +108,7 @@ Curated list of top AI Tools.
 | cv.cm/v | Queue-free Seedance 2.0 AI video and image generation with an open API | [🔗](https://cv.cm/v)|
 | RemoveGlassesGlare | Remove glare and reflections from glasses in photos | [🔗](https:/removeglassesglare.com) |
 | Punch Needle Generator | AI-powered punch needle embroidery pattern generator with color-coded yarn maps. Generates patterns from text prompts or image uploads, exports PDF/PNG/SVG. | [🔗](https://www.punchneedle.co.il/en) |
+| Picovix | Free AI consistent character & virtual model generator — keep the same face across unlimited scenes from one selfie, no signup | [🔗](https://www.picovix.app/) |
 
 ## Conversational AI
 
@@ -349,6 +350,7 @@ Curated list of top AI Tools.
 | Imagine 3D (by Luma AI) | tool for prototyping 3D objects with text | [🔗](https://captures.lumalabs.ai/imagine)|
 | move.ai | AI-powered real-time motion capture | [🔗](https://www.move.ai/)|
 | Inworld AI | create any character you can imagine | [🔗](https://inworld.ai/)|
+| Auferet | AI game master for solo text adventures and tabletop RPGs, with long-term story memory and your own uploaded lore | [🔗](https://auferet.com/)|
 | Seele AI | No-code AI game maker for creating playable 2D/3D games from text prompts | [🔗](https://www.seeles.ai/)|
 | Scenario | creating AI-generated game assets | [🔗](https://www.scenario.gg/)|
 | MeshGPT | AI-Powered 3D Model Generation & Optimization | [🔗](https://meshgpt.io/)|
