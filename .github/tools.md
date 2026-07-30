@@ -340,6 +340,7 @@ Curated list of top AI Tools.
 | Xquik | X/Twitter data platform with AI agent integration — MCP server, REST API, 20 extraction tools. | [🔗](https://github.com/Xquik-dev/x-twitter-scraper) |
 | AI API Cost Calculator | Free tool to estimate and compare API token costs across 23 tools and 7 models .. | [🔗](https://aiagentsbuzz.com/tools/ai-cost-calculator/) |
 | agentskill.sh | Searchable directory of 100,000+ skills for AI coding agents (Claude Code, Cursor, Copilot) | [🔗](https://agentskill.sh)|
+| Tree Ring Memory | Local-first memory lifecycle framework for AI agents with Rust CLI, SQLite/FTS recall, audit, consolidation, and forgetting | [🔗](https://terminallylazy.github.io/Tree-Ring-Memory/) |
 | BoltShot | Website Screenshot API with OpenAI Integration to Support AI Analysis of Screenshot Taken |[🔗](https://www.boltshot.dev/)|
 | StackPicks | Curated directory of open-source dev tools and AI products with editorial takes — what each does, the honest tradeoff, who should skip. ~200 picks. | [🔗](https://stackpicks.dev) |
 
@@ -478,6 +479,7 @@ Curated list of top AI Tools.
 | Chatpdf.so | Chatpdf.so is an AI based chat tool designed to chat with PDF. | [🔗](https://chatpdf.so) |
 | ReportGPT | Elevate your document writing by harnessing the power of AI and experience the seamless creation of documents. | [🔗](https://report-gpt.io) |
 | Recurrr | Send recurring emails | [🔗](https://recurrr.com) |
+| Tudo | AI task capture and personal planning app for turning quick thoughts into organized next actions. | [🔗](https://blynkai.app/tudo/) |
 | AI PowerPoint Maker | AI presentation generator for PowerPoint | [🔗](https://aipowerpointmaker.com/) |
 | Lede | Generate In-Depth Blog Content | [🔗](https://thelede.ai) |
 | Panem | AI Powered SaaS Spend Management | [🔗](https://panem.co) |
