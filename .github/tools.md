@@ -21,9 +21,9 @@ Curated list of top AI Tools.
 
 | Tools | Used for | Link |
 |------ | ------------ | :----------: |
-| [NanoBanana2](https://nanobanana2.com) | Free AI image generator with trend-aware templates, multiple AI models, and advanced editing tools | Free + Premium |
-| [ThumblifyAI](https://thumblifyai.com) | AI thumbnail generator that lets creators generate, recreate, and edit YouTube thumbnails in their own style or face | Free + Premium |
-| [igly.ai](https://igly.ai) | Free AI image editor with 12+ tools for e-commerce — background removal, generation, inpainting, upscaling | Free |
+| NanoBanana2 | Free AI image generator with trend-aware templates, multiple AI models, and advanced editing tools | [🔗](https://nanobanana2.com) |
+| ThumblifyAI | AI thumbnail generator that lets creators generate, recreate, and edit YouTube thumbnails in their own style or face | [🔗](https://thumblifyai.com) |
+| igly.ai | Free AI image editor with 12+ tools for e-commerce — background removal, generation, inpainting, upscaling | [🔗](https://igly.ai)) |
 |AI Baby Dance|Turn photos into dancing videos|[🔗](https://aibabydance.com)|
 |Saveto AI|100% Free all-in-one AI Transcription & Summarization online |[🔗](https://saveto.ai/)|
 |Transcribe Video AI|Free Video to Text Converter online (No Sign up)|[🔗](https://transcribe-video.ai/)|
@@ -344,6 +344,7 @@ Curated list of top AI Tools.
 | Narrow AI | Automated Prompt Engineering and Optimization | [🔗](https://www.getnarrow.ai/) |
 | Price Per Token | Compare LLM API pricing across 300+ models with token counters and benchmarks | [🔗](https://pricepertoken.com/) |
 | TestSprite | The most powerful AI testing tool for testing, fixing, and validating your software in one automated flow. | [🔗](https://www.testsprite.com/) |
+| Agent QA | Source-available CLI and MCP server for orchestrating agent-led QA workflows across web, Android, and iOS targets. | [🔗](https://github.com/vostride/agent-qa) |
 | Omnara | Command Center for AI Coding Agents. | [🔗](https://www.omnara.com/) |
 | SpeedUp AI | End-to-End AI Circuit Schematic Design | [🔗](https://speed-up.ai/) |
 | Xquik | X/Twitter data platform with AI agent integration — MCP server, REST API, 20 extraction tools. | [🔗](https://github.com/Xquik-dev/x-twitter-scraper) |
