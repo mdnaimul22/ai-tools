@@ -280,6 +280,7 @@ Curated list of top AI Tools.
 | Tools | Used for | Link |
 |------ | ------------ | :----------: |
 | AI/ML API | 200+ AI models thorugh on API. ChatGPT, Sonnet, Gemini, Llama, and even many video and image-gen models, all in one place. | [🔗](https://aimlapi.com/?utm_source=top-ai-tools&utm_medium=github&utm_campaign=integration)|
+| AI Router | Hosted OpenAI-compatible API relay for developer and coding-agent workflows; supports personal API keys, per-key usage visibility, and model discovery through authenticated `/v1/models`. | [🔗](https://ai-router.dev) |
 | Chat Data Prep | data transformation using plain english | [🔗](https://www.akkio.com/chat-data-prep)|
 | Codeium | free AI powered code completion | [🔗](https://www.codeium.com/)|
 | Capacity | Create fullstack web applications using AI | [🔗](https://capacity.so/)|
@@ -552,7 +553,7 @@ Curated list of top AI Tools.
 | Video Transcriber | Transcribe Video to Text Online Free | [🔗](https://videotranscriber.ai/) |
 | Audio Converter | Convert Audio to Text Online Free | [🔗](https://audioconverter.ai/) |
 | TikTok Transcript | Extract TikTok subtitles and download transcripts in SRT or TXT. | [🔗](https://tiktoktranscript.org/) |
-| Transcribe Video to Text | AI video & audio transcription with speaker ID, word-level timestamps & SRT/VTT export | [🔗](https://www.transcribevideototext.com/) |
+| Videosays | Turn public social video links into transcripts and timestamped subtitles | [🔗](https://videosays.com/) |
 | My Passion AI | AI-powered quiz to find your passion career path | [🔗](https://mypassion.ai) |
 | Worklytics | Analytics on AI and Productivity | [🔗](https://www.worklytics.co/) |
 | Voibe | Fast, private, on device AI voice dictation app for Mac | [🔗](https://www.getvoibe.com) |
