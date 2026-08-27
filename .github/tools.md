@@ -58,6 +58,7 @@ Curated list of top AI Tools.
 | The Multiverse AI | Turn your selfies into professional headshots| [🔗]((https://themultiverse.ai/)) |
 | StockPhotoAI.net | Great stock photos, made for you. | [🔗](https://www.stockphotoai.net/?ref=Top-AI-Tools) |
 | FairyTailAI | Personalized bedtime story generator | [🔗](https://fairytailai.com/) |
+| WizGenerator Story Generator | Free AI story generator with customizable genre, tone, characters, and plot details; no sign-up required | [🔗](https://wizgenerator.com/tools/story-generator/) |
 | eBank | eBank is a AI Art Generator and AI Art Search Engine where you can search millions of community AI Artworks. |   [🔗](https://eBank.nz)    |
 | Architecture Helper | Analyze any building architecture, and generate your own custom styles, in seconds. | [🔗](https://architecturehelper.com) |
 | VocalReplica | AI-Powered Vocal and Instrumental Isolation for Your Favorite Tracks | [🔗](https://vocalreplica.com/) |
@@ -530,6 +531,7 @@ Curated list of top AI Tools.
 | Type Think AI | Your Gateway to Multiple AI Models | [🔗](https://typethinkai.com/) |
 | Smmry | Summarize Long Content Into Clear Insights | [🔗](https://smmry.com/) |
 | TranscribeTube | Transcribe youtube video, spotify podcast to text free & AI-ready formats | [🔗](https://www.transcribetube.com/?ref=Top-AI-Tools) |
+| Harku YouTube Transcript Generator | Convert YouTube videos into timestamped text with 60+ languages and TXT/SRT/VTT/DOCX exports | [🔗](https://harku.io/tools/youtube-to-text) |
 | ResumeBoostAI | Generate professional resumes using AI | [🔗](https://resumeboostai.com/) |
 | Alt Text Generator AI | Generate alt text for images using AI | [🔗](https://alttextgeneratorai.com/) |
 | PropertyListingsAI | Generate real estate listings using AI | [🔗](https://propertylistingsai.com/) |
