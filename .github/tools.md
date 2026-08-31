@@ -118,6 +118,7 @@ Curated list of top AI Tools.
 | Punch Needle Generator | AI-powered punch needle embroidery pattern generator with color-coded yarn maps. Generates patterns from text prompts or image uploads, exports PDF/PNG/SVG. | [🔗](https://www.punchneedle.co.il/en) |
 | PixMira AI | AI photo editor and image generator for editing, generating, and transforming images with prompts. | [🔗](https://pixmira.ai) |
 | Picovix | Free AI consistent character & virtual model generator — keep the same face across unlimited scenes from one selfie, no signup | [🔗](https://www.picovix.app/) |
+| Faceless Reels | Turn one topic into a voiced, captioned faceless video for TikTok, Reels, and Shorts. | [🔗](https://facelessreels.video/) |
 
 ## Conversational AI
 
@@ -468,6 +469,7 @@ Curated list of top AI Tools.
 | NotFair | Google Ads MCP server connecting Claude and AI agents to your Google Ads account. Diagnose performance, recommend optimizations, and execute approved campaign changes. | [🔗](https://notfair.co) |
 | MyndField | World's First Decision Engine | [🔗](https://myndfield.ai/) |
 | Tuku | TikTok comment-to-DM automation for SEA creators & merchants. | [🔗](https://tuku.co/) |
+| Flypost | AI LinkedIn content studio — turns blogs, videos & docs into on-brand LinkedIn posts, carousels & articles | [🔗](https://www.flypost.io/) |
 
 
 ## Productivity
