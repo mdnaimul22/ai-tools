@@ -85,6 +85,7 @@ Curated list of top AI Tools.
 | Storyshort AI | Create viral faceless videos on Auto-Pilot. | [🔗](https://storyshort.ai/)
 | FacelessVideos.app | Turn text prompts into viral faceless videos for YouTube Shorts, TikTok, and Reels. | [🔗](https://facelessvideos.app/) |
 | PDFtoVideo | Convert PDF & Any Contents to Video Online Free | [🔗](https://pdftovideo.ai/)
+| videos.social | Turns blogs, PDFs, and prompts into editable faceless videos. | [🔗](https://videos.social/?utm_source=ghimiresunil-top-ai-tools&utm_medium=directory&utm_campaign=listing-wave-d) |
 | OpenCreator | All-in-one AI workspace for creating product visuals with workflow automation | [🔗](https://opencreator.ai/)
 | Somny | AI character generator for creating personalized images and videos from your own likeness. | [🔗](https://www.somny.com/)
 | MaxVideoAI | Multi-engine AI video generation hub (Sora, Veo, Pika, Kling, LTX & more) with pay-as-you-go credits. | [🔗](https://maxvideoai.com) |
@@ -618,6 +619,7 @@ Curated list of top AI Tools.
 | Competitor Research | AI tool to help companies track their competitors | [🔗](https://www.competitoresearch.com/) |
 | Compass | AI-driven answers to SaaS research questions | [🔗](https://www.getwhys.io/compass) |
 | MuckBrass | Find & Validate Startup Ideas | [🔗](https://www.muckbrass.com) |
+| IdeaHunter | AI research for demand-backed app and micro-SaaS ideas | [🔗](https://ideahunter.today) |
 | Phind | An AI search engine, using multi-step reasoning to find the answer & generative UI to present it in a beautiful and interactive way.| [🔗](https://www.phind.com/)|
 | DeepResearch-Agent | An OpenAI-like DeepResearch agent that plans and thinks, equipped with a beautiful frontend (UI). | [🔗](https://github.com/Parveshiiii/Deepresearch-Agent) |
 |AI Conference Deadline | AI/ML conference deadline tracker| [🔗](https://www.aiconferenceddl.com/)|
