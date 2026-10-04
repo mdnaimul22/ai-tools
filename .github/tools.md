@@ -376,6 +376,7 @@ Curated list of top AI Tools.
 | Lucebox | The computer for local AI |[🔗](https://www.lucebox.com/)|
 | StackPicks | Curated directory of open-source dev tools and AI products with editorial takes — what each does, the honest tradeoff, who should skip. ~200 picks. | [🔗](https://stackpicks.dev) |
 | Tura | Local-first open-source coding agent with CLI, TUI, and GUI interfaces, built-in verification, and reproducible public benchmarks. | [🔗](https://github.com/Tura-AI/tura) |
+| Trackee | SEO & AI visibility, in one API |[🔗](https://www.trackee.dev/)|
 | YYLO | Open-source command-line orchestrator for coding agents with typed task, branch/worktree, and merge-queue workflows for receipt-backed repository changes. | [🔗](https://github.com/yylo-dev/yylo) |
 | XiuRouter | Hosted multi-model API with native OpenAI Responses and Chat Completions, Anthropic Messages, Gemini GenerateContent, scoped keys, and request-level usage and cost records. | [🔗](https://router.xiu.ai/) |
 
@@ -621,6 +622,7 @@ Curated list of top AI Tools.
 | Rewind | search engine for your life | [🔗](https://www.rewind.ai/)|
 | You | AI powered search engine | [🔗](https://you.com/apps/discover)|
 | [SerpBase](https://serpbase.dev) | Google Search Results API for developers and AI agents | [🔗](https://serpbase.dev) |
+| [Serply](https://serply.io) | Google Search, News and Scholar results API with an MCP server for AI agents | [🔗](https://serply.io) |
 | muse.ai | video content search and conversational assistant | [🔗](https://muse.ai/) |
 | Refinder AI | AI-powered universal search and assistant for work| [🔗](https://refinder.ai/)|
 | Hika AI| AI search for deeper thinking, not just find answers | [🔗](https://www.hika.fyi)|
