@@ -230,6 +230,7 @@ Curated list of top AI Tools.
 | Salary Calculator | Salary-Calculator.ai helps you compare net salaries worldwide instantly | [🔗](https://salary-calculator.ai/) |
 | PayCalculator | PayCalculator.ai instantly calculates take-home pay with tax breakdowns | [🔗](https://paycalculator.ai/) |
 | TaxTools AI | AI Tax Tools | [🔗](https://taxtools.ai/cn) |
+| HostDeFi | Free multi-chain token risk scanner — instant on-chain safety grades for Solana and EVM tokens, plus x402 agent API | [🔗](https://hostdefi.com/scan) |
 | PolyMind | Real-time Polymarket prediction market alerts with multi-AI analysis. 12 signal types: whale bets, volume spikes, coordinated wallets and more. | [🔗](https://polymi
 | Bank Statement Converter AI | Bank Statement Converter AI: Convert PDF to Excel | [🔗](https://bankstatement-wizard.net/bank-statement-converter-ai) |
 
@@ -380,6 +381,7 @@ Curated list of top AI Tools.
 | Trackee | SEO & AI visibility, in one API |[🔗](https://www.trackee.dev/)|
 | YYLO | Open-source command-line orchestrator for coding agents with typed task, branch/worktree, and merge-queue workflows for receipt-backed repository changes. | [🔗](https://github.com/yylo-dev/yylo) |
 | XiuRouter | Hosted multi-model API with native OpenAI Responses and Chat Completions, Anthropic Messages, Gemini GenerateContent, scoped keys, and request-level usage and cost records. | [🔗](https://router.xiu.ai/) |
+| AI API Cost Calculator | Compare API prices for 40+ LLMs (OpenAI, Anthropic, Google, DeepSeek, xAI, Mistral) with cache and Batch discounts; reconciled daily, with a free JSON API. | [🔗](https://aicostcalc.net/) |
 
 
 ## Gaming, 3D, Motion
