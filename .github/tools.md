@@ -210,6 +210,7 @@ Curated list of top AI Tools.
 | free-background-remover.com | Removing image backgrounds in the browser with AI, no upload, no sign-up, no watermark | [🔗](https://free-background-remover.com)|
 | PartyInvitation.ai | Free AI party invitation card generator with online RSVP tracking for 38+ event types | [🔗](https://partyinvitation.ai/)|
 | voxelyo | AI photo enhancement + virtual twilight conversion for Airbnb, Vrbo, and real-estate listing photos | [🔗](https://voxelyo.com)|
+| APPLORE | AI app icon generator for iOS and Android, plus a library of 18,000+ real App Store and Google Play icons for reference | [🔗](https://applore.app/ai-app-icon-generator)|
 
 ## E-commerce
 
@@ -391,6 +392,7 @@ Curated list of top AI Tools.
 | looot | Data API and remote MCP server for AI agents. One API key and prepaid balance for about 2,500 endpoints: work email, phone, company enrichment, Google search results, web pages. | [🔗](https://looot.ai/) |
 | CurlShot | Screenshot API and remote MCP server for AI agents. Captures any public URL as PNG, JPEG, WebP, PDF or scrolling video with one GET request. Free plan with 100 screenshots a month. | [🔗](https://curlshot.com/) |
 | Aident Loadout | Hosted MCP server and CLI that gives Claude Code, Codex, Cursor and other AI agents shared app connections and 400+ Skills, with a credential vault, a cost preview before each action and an audit log. Free pay-as-you-go tier. | [🔗](https://aident.ai) |
+| Datacircle | Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor. | [🔗](https://datacircle.dev/) |
 
 
 ## Gaming, 3D, Motion
