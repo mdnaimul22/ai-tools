@@ -127,6 +127,7 @@ Curated list of top AI Tools.
 | Faceless Reels | Turn one topic into a voiced, captioned faceless video for TikTok, Reels, and Shorts. | [🔗](https://facelessreels.video/) |
 | Kling4 | AI video generator offering free daily credits, text-to-video, image-to-video, and ready-to-use video prompts. | [🔗](https://kling40.app/) |
 | HeyBop.ai | Turn your song into an AI music video, cut to the beat. | [🔗](https://heybop.ai/) |
+| Vidney | Multi-model AI video and image generator: 40+ models (Kling, Veo, Seedance, Wan, Grok Imagine, Nano Banana) in one workspace on one credit balance, with free credits to start. | [🔗](https://vidney.ai/) |
 
 ## Conversational AI
 
@@ -393,6 +394,7 @@ Curated list of top AI Tools.
 | CurlShot | Screenshot API and remote MCP server for AI agents. Captures any public URL as PNG, JPEG, WebP, PDF or scrolling video with one GET request. Free plan with 100 screenshots a month. | [🔗](https://curlshot.com/) |
 | Aident Loadout | Hosted MCP server and CLI that gives Claude Code, Codex, Cursor and other AI agents shared app connections and 400+ Skills, with a credential vault, a cost preview before each action and an audit log. Free pay-as-you-go tier. | [🔗](https://aident.ai) |
 | Datacircle | Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor. | [🔗](https://datacircle.dev/) |
+| deed.page | Static site hosting for AI agents. One HTTP request or MCP tool call publishes files to a permanent deed.page subdomain URL, with no account needed. Free plan without a card. | [🔗](https://deed.page) |
 
 
 ## Gaming, 3D, Motion
