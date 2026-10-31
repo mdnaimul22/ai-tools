@@ -212,6 +212,7 @@ Curated list of top AI Tools.
 | PartyInvitation.ai | Free AI party invitation card generator with online RSVP tracking for 38+ event types | [🔗](https://partyinvitation.ai/)|
 | voxelyo | AI photo enhancement + virtual twilight conversion for Airbnb, Vrbo, and real-estate listing photos | [🔗](https://voxelyo.com)|
 | APPLORE | AI app icon generator for iOS and Android, plus a library of 18,000+ real App Store and Google Play icons for reference | [🔗](https://applore.app/ai-app-icon-generator)|
+| FontVibe | AI text effect and lettering designs for logos, banners and thumbnails, with 390+ AI fonts and 130+ visual styles. Free to try | [🔗](https://fontvibe.ai/) |
 
 ## E-commerce
 
@@ -630,6 +631,7 @@ Curated list of top AI Tools.
 | Sistava | Hire AI employees to run your entire business, from sales and marketing, to customer support | [🔗](https://sistava.com) |
 | TeamBrain | Shared workspace for AI teams | [🔗](https://teambrain.co/) |
 | AI Dictation | Open-source voice typing with offline recognition on supported devices and optional cleanup | [🔗](https://aidictation.com/) |
+| VoxSail | Translate video and audio, create AI dubbing, and review subtitles in a browser; paid plans with one-time starter credits. | [🔗](https://voxsail.com/en/) |
 
 ## Search Engines & Tools
 
