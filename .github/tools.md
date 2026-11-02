@@ -128,6 +128,7 @@ Curated list of top AI Tools.
 | Kling4 | AI video generator offering free daily credits, text-to-video, image-to-video, and ready-to-use video prompts. | [🔗](https://kling40.app/) |
 | HeyBop.ai | Turn your song into an AI music video, cut to the beat. | [🔗](https://heybop.ai/) |
 | Vidney | Multi-model AI video and image generator: 40+ models (Kling, Veo, Seedance, Wan, Grok Imagine, Nano Banana) in one workspace on one credit balance, with free credits to start. | [🔗](https://vidney.ai/) |
+| Wizmade | All-in-one AI video and image generation platform with Kling, Veo 3.1, Seedance, FLUX, and viral video effects | [🔗](https://wizmade.si/) |
 
 ## Conversational AI
 
@@ -513,6 +514,7 @@ Curated list of top AI Tools.
 | BigPipe | AI that turns a marketing agency's expertise into a self-running company, building and operating its website, product, billing, and back office on autopilot. | [🔗](https://bigpipe.agency) |
 | LLM Pulse | Monitors brand mentions, citations, sentiment, and competitor share of voice across AI search engines. | [🔗](https://llmpulse.ai/) |
 | AltoRank | Open-source SEO content software: readiness checks, keyword research and drafts into a review queue; self-host or hosted | [🔗](https://altorank.co/) |
+| AdVariq | AI ad creative and visual generator for solo founders, indie makers, and marketing teams to clone winning ads, edit product photos, and generate high-converting promotional assets | [🔗](https://advariq.com/) |
 
 
 ## Productivity
@@ -694,6 +696,7 @@ Curated list of top AI Tools.
 | Beheard Labs | AI-Powered Customer Insight Platform | [🔗](https://www.gobeheard.com/) |
 | Rosie | AI Phone Answering Service | [🔗](https://heyrosie.com/) |
 | SwiftCall | AI phone answering and multipurpose agents for small businesses | [🔗](https://swiftcall.org/ai-receptionist) |
+| Odile After Hours | AI phone receptionist: answers 24/7 in 32 languages and texts the owner every call | [🔗](https://odilelabs.com/afterhours) |
 | Vidocu | Turn screen recordings into professional videos and documentation | [🔗](https://vidocu.ai/) |
 | AnveVoice | AI voice agent for websites — trains on your content, navigates pages, fills forms, books appointments in 50+ languages with <700ms latency | [🔗](https://anvevoice.app) |
 | Hellomatik | AI agent platform that turns company knowledge into agents that answer, sell and book across WhatsApp, email and web. | [🔗](https://hellomatik.com) |
