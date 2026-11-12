@@ -531,6 +531,7 @@ Curated list of top AI Tools.
 
 | Tools | Used for | Link |
 |------ | ------------ | :----------: |
+| Novastart | Infinite-canvas whiteboard OS for apps, shared canvases, and AI agents. Free plan with paid upgrades. | [🔗](https://novastart.com/) |
 | Doc2X | AI document parsing and translation; PDF/images to Word, Markdown and LaTeX with formula/table recognition. Free trial; paid memberships/credits and per-page API. | [🔗](https://doc2x.noedgeai.com/) |
 | Tudo | AI task manager for iPhone that turns voice notes, screenshots, and text into organized tasks and plans. | [🔗](https://blynkai.app/tudo/) |
 | Remio | Local-first AI memory and knowledge base that parses files, webpages, recordings, emails, and notes into local indexes for faster personal-context retrieval | [🔗](https://remio.ai/) |
@@ -683,6 +684,7 @@ Curated list of top AI Tools.
 | Citely | AI citation checker and academic source finder for verifying references and claims. | [🔗](https://citely.ai/)|
 | 8bit Concepts | Free AI research papers on enterprise AI adoption and governance | [🔗](https://8bitconcepts.com)|
 | Court Rules | Free U.S. court rules, judge standing orders and holidays, with an MCP server for AI assistants | [🔗](https://www.courtrules.app/) |
+| KissMyPost | Reddit audience research: semantic subreddit search, audience stats and an MCP server for AI assistants | [🔗](https://kissmypost.com) |
 
 ## Geospatial
 
