@@ -145,6 +145,7 @@ Curated list of top AI Tools.
 | Rizz AI | Rizz AI GPT: Free Rizz Online App, Unlimited Rizz Chat Bot. | [🔗](https://www.rizzlines.app/)|
 | Honer AI | Android AI assistant for chat, writing, translation, and web search with sources, with Russian and English interfaces | [🔗](https://xoner4.github.io/)|
 | Character.AI | conversational AI for open-ended conversations | [🔗](https://beta.character.ai/)|
+| Sammi: AI Girlfriend | Android fictional AI character chat with voice interaction, customization and creative roleplay; free download with in-app purchases. | [🔗](https://sammiai.app/) |
 | DreamjourneyAI | AI roleplay and character chat platform | [🔗](https://dreamjourneyai.com)
 | ChatGPT (by OpenAI) | conversational AI system powered by large language models | [🔗](https://chat.openai.com/)|
 | Gemini (by Google) | conversational AI chat service from Google that can access and process information from the web | [🔗](https://gemini.google.com/)|
@@ -385,6 +386,7 @@ Curated list of top AI Tools.
 | Rysa AI | AI GTM Automation Agent | [🔗](https://www.rysa.ai) |
 | StarOps | AI Platform Engineer | [🔗](https://ingenimax.ai) |
 | Narrow AI | Automated Prompt Engineering and Optimization | [🔗](https://www.getnarrow.ai/) |
+| AIHOT Free AI Credits | Find free model and API allowances and check how to claim them in a Chinese-language directory | [🔗](https://aihot.news/free-tokens) |
 | Price Per Token | Compare LLM API pricing across 300+ models with token counters and benchmarks | [🔗](https://pricepertoken.com/) |
 | TestSprite | The most powerful AI testing tool for testing, fixing, and validating your software in one automated flow. | [🔗](https://www.testsprite.com/) |
 | Agent QA | Source-available CLI and MCP server for orchestrating agent-led QA workflows across web, Android, and iOS targets. | [🔗](https://github.com/vostride/agent-qa) |
