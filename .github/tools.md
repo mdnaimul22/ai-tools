@@ -137,6 +137,7 @@ Curated list of top AI Tools.
 | AgentCraft Seedance 2.5 Prompts | 593 Seedance 2.5 video prompts kept verbatim from creators, each with the video it made, plus Kling 4.0 and Nano Banana 2.1 collections. Free. | [🔗](https://agentcraft.dev/en/prompts/video/seedance-2-5/) |
 | PicYep | Create AI photos, images and short videos from text or reference photos | [🔗](https://picyep.com) |
 | PalaPili | Free AI photo enhancer & image editor: unblur faces, upscale to 4K, edit by text prompts, plus cinematic AI video | [🔗](https://palapili.com) |
+| AI Holiday Portraits | AI Christmas family photos made from separate pictures of each person and pet, with a printable 5 x 7 in card; free watermarked preview, one-time galleries from $9 | [🔗](https://aiholidayportraits.com/) |
 
 ## Conversational AI
 
@@ -531,6 +532,7 @@ Curated list of top AI Tools.
 | AltoRank | Open-source SEO content software: readiness checks, keyword research and drafts into a review queue; self-host or hosted | [🔗](https://altorank.co/) |
 | AdVariq | AI ad creative and visual generator for solo founders, indie makers, and marketing teams to clone winning ads, edit product photos, and generate high-converting promotional assets | [🔗](https://advariq.com/) |
 | Revenue Scout | Finds public posts from people who need what you sell. Drafts replies you can review and post. | [🔗](https://revenuescout.ai/) |
+| BulkPublish | Schedule and publish posts to real social media accounts on 15 networks from one dashboard, REST API or hosted MCP server for AI agents | [🔗](https://www.bulkpublish.com) |
 
 
 ## Productivity
